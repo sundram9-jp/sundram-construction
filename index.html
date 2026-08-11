@@ -25,9 +25,10 @@ text-align:center;
 border-bottom:3px solid orange;
 }
 
-header h1{
-font-size:34px;
-color:orange;
+header img{
+max-width:320px;
+width:90%;
+height:auto;
 }
 
 header p{
@@ -62,6 +63,108 @@ font-weight:bold;
 text-decoration:none;
 border-radius:8px;
 }
+
+.why{
+padding:60px 20px;
+background:#f8f9fa;
+text-align:center;
+}
+
+.why h2{
+font-size:32px;
+color:#222;
+margin-bottom:15px;
+}
+
+.why-intro{
+max-width:700px;
+margin:auto;
+color:#666;
+margin-bottom:40px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:#fff;
+padding:25px 20px;
+border-radius:12px;
+width:260px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+color:#222;
+font-size:21px;
+margin-bottom:12px;
+}
+
+.card p{
+color:#555;
+font-size:16px;
+line-height:1.5;
+}
+
+.services{
+padding:60px 20px;
+background:#111;
+text-align:center;
+}
+
+.services h2{
+font-size:32px;
+color:orange;
+margin-bottom:15px;
+}
+
+.services-intro{
+color:#ccc;
+margin-bottom:40px;
+}
+
+.service-card{
+background:#222;
+padding:25px 20px;
+border-radius:12px;
+width:260px;
+}
+
+.service-card h3{
+color:white;
+font-size:20px;
+}
+
+@media(max-width:600px){
+
+.hero{
+padding:60px 15px;
+}
+
+.hero h2{
+font-size:32px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.btn{
+margin:8px;
+padding:14px 25px;
+}
+
+.card,
+.service-card{
+width:100%;
+max-width:320px;
+}
+
+}
 </style>
 
 </head>
@@ -69,82 +172,92 @@ border-radius:8px;
 <body>
 
 <header>
-<img src="file_0000000094408208b40ab4cf740f2f8c.png" alt="Sundram Construction Logo" style="max-width:320px; width:90%; height:auto;">
+
+<img src="file_0000000094408208b40ab4cf740f2f8c.png"
+alt="Sundram Construction Logo">
+
 <p>One Call Solution For Your Dream Home</p>
+
 </header>
 
+
 <section class="hero">
+
 <h2>हम सिर्फ़ मकान नहीं,<br>भरोसा बनाते हैं।</h2>
 
 <p>Free Site Visit • Free 2D Plan • Free 3D Elevation</p>
 
-<a class="btn" href="tel:7999124647">📞 Call Now</a>
+<a class="btn" href="tel:7999124647">Call Now</a>
 
-<a class="btn" href="https://wa.me/917999124647">💬 WhatsApp</a>
+<a class="btn" href="https://wa.me/917999124647">WhatsApp</a>
 
 </section>
-<section style="padding:60px 20px;background:#f8f9fa;text-align:center;">
-  <h2 style="font-size:32px;color:#222;margin-bottom:15px;">
-    Why Choose Sundram Construction?
-  </h2>
 
-  <p style="max-width:700px;margin:auto;color:#666;margin-bottom:40px;">
-    हम केवल मकान नहीं बनाते, बल्कि आपके सपनों का मजबूत और भरोसेमंद घर बनाते हैं।
-  </p>
 
-  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+<section class="why">
 
-    <div style="background:#fff;padding:20px;border-radius:12px;width:260px;box-shadow:0 5px 15px rgba(0,0,0,.08);">
-      <h3>Premium Quality</h3>
-      <p>उच्च गुणवत्ता वाली सामग्री और बेहतरीन निर्माण।</p>
-    </div>
+<h2>Why Choose Sundram Construction?</h2>
 
-    <div style="background:#fff;padding:20px;border-radius:12px;width:260px;box-shadow:0 5px 15px rgba(0,0,0,.08);">
-      <h3>Expert Team</h3>
-      <p>अनुभवी इंजीनियर और कुशल सुपरविजन।</p>
-    </div>
+<p class="why-intro">
+हम केवल मकान नहीं बनाते, बल्कि आपके सपनों का मजबूत और भरोसेमंद घर बनाते हैं।
+</p>
 
-    <div style="background:#fff;padding:20px;border-radius:12px;width:260px;box-shadow:0 5px 15px rgba(0,0,0,.08);">
-      <h3>On Time Delivery</h3>
-      <p>समय पर काम पूरा करने की पूरी प्रतिबद्धता।</p>
-    </div>
+<div class="cards">
 
-    <div style="background:#fff;padding:20px;border-radius:12px;width:260px;box-shadow:0 5px 15px rgba(0,0,0,.08);">
-      <h3>Transparent Pricing</h3>
-      <p>कोई छिपा हुआ खर्च नहीं, पूरी पारदर्शिता।</p>
-    </div>
+<div class="card">
+<h3>Premium Quality</h3>
+<p>उच्च गुणवत्ता वाली सामग्री और बेहतरीन निर्माण।</p>
+</div>
 
-  </div>
+<div class="card">
+<h3>Expert Team</h3>
+<p>अनुभवी इंजीनियर और कुशल सुपरविजन।</p>
+</div>
+
+<div class="card">
+<h3>On Time Delivery</h3>
+<p>समय पर काम पूरा करने की पूरी प्रतिबद्धता।</p>
+</div>
+
+<div class="card">
+<h3>Transparent Pricing</h3>
+<p>कोई छिपा हुआ खर्च नहीं, पूरी पारदर्शिता।</p>
+</div>
+
+</div>
+
 </section>
-<section style="padding:60px 20px;background:#111;text-align:center;">
-<h2 style="font-size:32px;color:orange;margin-bottom:15px;">
-Our Services
-</h2>
 
-<p style="color:#ccc;margin-bottom:40px;">
+
+<section class="services">
+
+<h2>Our Services</h2>
+
+<p class="services-intro">
 हम आपके घर निर्माण से जुड़ी सभी सेवाएँ एक ही जगह प्रदान करते हैं।
 </p>
 
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+<div class="cards">
 
-<div style="background:#222;padding:20px;border-radius:12px;width:260px;">
-<h3>🏠 Full House Construction</h3>
+<div class="service-card">
+<h3>Full House Construction</h3>
 </div>
 
-<div style="background:#222;padding:20px;border-radius:12px;width:260px;">
-<h3>📐 2D & 3D Design</h3>
+<div class="service-card">
+<h3>2D & 3D Design</h3>
 </div>
 
-<div style="background:#222;padding:20px;border-radius:12px;width:260px;">
-<h3>🧱 Material Management</h3>
+<div class="service-card">
+<h3>Material Management</h3>
 </div>
 
-<div style="background:#222;padding:20px;border-radius:12px;width:260px;">
-<h3>👷 Site Supervision</h3>
+<div class="service-card">
+<h3>Site Supervision</h3>
 </div>
 
 </div>
 
 </section>
+
 </body>
 </html>
