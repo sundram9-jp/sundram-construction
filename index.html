@@ -3,24 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sundram Construction Mandsaur</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial,"Noto Sans Devanagari",sans-serif;
 }
 
 body{
 background:#0b0b0b;
 color:white;
+line-height:1.6;
 }
+
+/* HEADER */
 
 header{
 background:#111;
-padding:20px;
+padding:25px 20px;
 text-align:center;
 border-bottom:3px solid orange;
 }
@@ -29,21 +34,27 @@ header img{
 max-width:320px;
 width:90%;
 height:auto;
+display:block;
+margin:auto;
 }
 
 header p{
 font-size:18px;
-margin-top:8px;
+margin-top:10px;
 color:#ddd;
 }
+
+/* HERO */
 
 .hero{
 padding:80px 20px;
 text-align:center;
+background:#0b0b0b;
 }
 
 .hero h2{
 font-size:42px;
+line-height:1.3;
 color:white;
 }
 
@@ -53,19 +64,35 @@ margin-top:20px;
 color:#ccc;
 }
 
+.buttons{
+margin-top:25px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
 .btn{
 display:inline-block;
-margin:15px;
 padding:15px 35px;
 background:orange;
-color:black;
+color:#111;
 font-weight:bold;
 text-decoration:none;
 border-radius:8px;
+font-size:17px;
+transition:0.3s;
 }
 
+.btn:hover{
+background:#ffb52e;
+transform:translateY(-2px);
+}
+
+/* WHY CHOOSE */
+
 .why{
-padding:60px 20px;
+padding:65px 20px;
 background:#f8f9fa;
 text-align:center;
 }
@@ -78,9 +105,9 @@ margin-bottom:15px;
 
 .why-intro{
 max-width:700px;
-margin:auto;
+margin:0 auto 40px;
 color:#666;
-margin-bottom:40px;
+font-size:17px;
 }
 
 .cards{
@@ -95,23 +122,25 @@ background:#fff;
 padding:25px 20px;
 border-radius:12px;
 width:260px;
+min-height:145px;
 box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 .card h3{
-color:#222;
 font-size:21px;
-margin-bottom:12px;
+color:#222;
+margin-bottom:10px;
 }
 
 .card p{
-color:#555;
-font-size:16px;
-line-height:1.5;
+color:#666;
+font-size:15px;
 }
 
+/* SERVICES */
+
 .services{
-padding:60px 20px;
+padding:65px 20px;
 background:#111;
 text-align:center;
 }
@@ -125,6 +154,14 @@ margin-bottom:15px;
 .services-intro{
 color:#ccc;
 margin-bottom:40px;
+font-size:17px;
+}
+
+.service-cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
 
 .service-card{
@@ -132,71 +169,160 @@ background:#222;
 padding:25px 20px;
 border-radius:12px;
 width:260px;
+min-height:100px;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
 .service-card h3{
-color:white;
 font-size:20px;
+color:white;
 }
+
+/* CONTACT */
+
+.contact{
+padding:60px 20px;
+background:#0b0b0b;
+text-align:center;
+}
+
+.contact h2{
+font-size:30px;
+color:orange;
+margin-bottom:15px;
+}
+
+.contact p{
+color:#ccc;
+margin-bottom:25px;
+}
+
+/* FOOTER */
+
+footer{
+background:#050505;
+padding:25px 20px;
+text-align:center;
+border-top:1px solid #333;
+}
+
+footer p{
+color:#999;
+font-size:14px;
+}
+
+/* MOBILE */
 
 @media(max-width:600px){
 
+header{
+padding:20px 15px;
+}
+
+header img{
+width:85%;
+}
+
+header p{
+font-size:16px;
+}
+
 .hero{
-padding:60px 15px;
+padding:65px 15px;
 }
 
 .hero h2{
-font-size:32px;
+font-size:34px;
 }
 
 .hero p{
-font-size:18px;
+font-size:17px;
 }
 
 .btn{
-margin:8px;
-padding:14px 25px;
+padding:14px 28px;
+font-size:16px;
+}
+
+.why,
+.services,
+.contact{
+padding:50px 15px;
+}
+
+.why h2,
+.services h2{
+font-size:28px;
 }
 
 .card,
 .service-card{
 width:100%;
-max-width:320px;
+max-width:340px;
 }
 
 }
+
 </style>
-
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
 
-<img src="file_0000000094408208b40ab4cf740f2f8c.png"
-alt="Sundram Construction Logo">
+<img
+src="file_0000000094408208b40ab4cf740f2f8c.png"
+alt="Sundram Construction Mandsaur Logo">
 
 <p>One Call Solution For Your Dream Home</p>
 
 </header>
 
 
+<!-- HERO -->
+
 <section class="hero">
 
-<h2>हम सिर्फ़ मकान नहीं,<br>भरोसा बनाते हैं।</h2>
+<h2>
+हम सिर्फ़ मकान नहीं,<br>
+भरोसा बनाते हैं।
+</h2>
 
-<p>Free Site Visit • Free 2D Plan • Free 3D Elevation</p>
+<p>
+Free Site Visit • Free 2D Plan • Free 3D Elevation
+</p>
 
-<a class="btn" href="tel:7999124647">Call Now</a>
+<div class="buttons">
 
-<a class="btn" href="https://wa.me/917999124647">WhatsApp</a>
+<a
+class="btn"
+href="tel:7999124647">
+Call Now
+</a>
+
+<a
+class="btn"
+href="https://wa.me/917999124647">
+WhatsApp
+</a>
+
+</div>
 
 </section>
 
 
+<!-- WHY CHOOSE -->
+
 <section class="why">
 
-<h2>Why Choose Sundram Construction?</h2>
+<h2>
+Why Choose Sundram Construction?
+</h2>
 
 <p class="why-intro">
 हम केवल मकान नहीं बनाते, बल्कि आपके सपनों का मजबूत और भरोसेमंद घर बनाते हैं।
@@ -205,23 +331,54 @@ alt="Sundram Construction Logo">
 <div class="cards">
 
 <div class="card">
-<h3>Premium Quality</h3>
-<p>उच्च गुणवत्ता वाली सामग्री और बेहतरीन निर्माण।</p>
+
+<h3>
+Premium Quality
+</h3>
+
+<p>
+उच्च गुणवत्ता वाली सामग्री और बेहतरीन निर्माण।
+</p>
+
 </div>
 
-<div class="card">
-<h3>Expert Team</h3>
-<p>अनुभवी इंजीनियर और कुशल सुपरविजन।</p>
-</div>
 
 <div class="card">
-<h3>On Time Delivery</h3>
-<p>समय पर काम पूरा करने की पूरी प्रतिबद्धता।</p>
+
+<h3>
+Expert Team
+</h3>
+
+<p>
+अनुभवी इंजीनियर और कुशल सुपरविजन।
+</p>
+
 </div>
 
+
 <div class="card">
-<h3>Transparent Pricing</h3>
-<p>कोई छिपा हुआ खर्च नहीं, पूरी पारदर्शिता।</p>
+
+<h3>
+On Time Delivery
+</h3>
+
+<p>
+समय पर काम पूरा करने की पूरी प्रतिबद्धता।
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Transparent Pricing
+</h3>
+
+<p>
+कोई छिपा हुआ खर्च नहीं, पूरी पारदर्शिता।
+</p>
+
 </div>
 
 </div>
@@ -229,35 +386,100 @@ alt="Sundram Construction Logo">
 </section>
 
 
+<!-- SERVICES -->
+
 <section class="services">
 
-<h2>Our Services</h2>
+<h2>
+Our Services
+</h2>
 
 <p class="services-intro">
 हम आपके घर निर्माण से जुड़ी सभी सेवाएँ एक ही जगह प्रदान करते हैं।
 </p>
 
-<div class="cards">
+<div class="service-cards">
 
 <div class="service-card">
-<h3>Full House Construction</h3>
+
+<h3>
+Full House Construction
+</h3>
+
 </div>
 
-<div class="service-card">
-<h3>2D & 3D Design</h3>
-</div>
 
 <div class="service-card">
-<h3>Material Management</h3>
+
+<h3>
+2D &amp; 3D Design
+</h3>
+
 </div>
 
+
 <div class="service-card">
-<h3>Site Supervision</h3>
+
+<h3>
+Material Management
+</h3>
+
+</div>
+
+
+<div class="service-card">
+
+<h3>
+Site Supervision
+</h3>
+
 </div>
 
 </div>
 
 </section>
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2>
+Build Your Dream Home With Us
+</h2>
+
+<p>
+सही प्लानिंग, सही सामग्री और सही सुपरविजन के साथ।
+</p>
+
+<div class="buttons">
+
+<a
+class="btn"
+href="tel:7999124647">
+Call Now
+</a>
+
+<a
+class="btn"
+href="https://wa.me/917999124647">
+WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Sundram Construction Mandsaur. All Rights Reserved.
+</p>
+
+</footer>
 
 </body>
 </html>
